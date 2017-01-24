@@ -81,9 +81,9 @@ public class PersonTest extends TestCase {
 	public void testToString() {
 		Person p4 = new Person();
 		p4.setName("Fred Flintstone");
-		p4.setMaximumBooks(8);
+		p4.setMaximumBooks(9);
 		
-		String testString = "Fred Flintstone (8 books)";
+		String testString = "Fred Flintstone (9 books)";
 		assertEquals(testString, p4.toString());
 	}
 	
