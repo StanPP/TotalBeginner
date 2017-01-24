@@ -51,7 +51,7 @@ public class PersonTest extends TestCase {
 		assertEquals("Stanley", p1.getName());
 		
 		// Should not be able to change the name once it has been set
-		p1.setName("Fred");
+		p1.setName("Eric");
 		assertEquals("Stanley", p1.getName());
 	}
 	
@@ -60,7 +60,7 @@ public class PersonTest extends TestCase {
 		
 		//Test 1
 		// Cannot use changeName until the name is set
-		p1.changeName("Fred");
+		p1.changeName("George");
 		assertEquals("unknown name", p1.getName());
 		
 		// Test 2
@@ -81,9 +81,9 @@ public class PersonTest extends TestCase {
 	public void testToString() {
 		Person p4 = new Person();
 		p4.setName("Fred Flintstone");
-		p4.setMaximumBooks(7);
+		p4.setMaximumBooks(8);
 		
-		String testString = "Fred Flintstone (7 books)";
+		String testString = "Fred Flintstone (8 books)";
 		assertEquals(testString, p4.toString());
 	}
 	
