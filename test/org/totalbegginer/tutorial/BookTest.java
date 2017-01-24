@@ -15,7 +15,7 @@ public class BookTest extends TestCase {
 		Book b2 = new Book ("War And Peace");
 				
 		Person p2 = new Person();
-		p2.setName("Elvis");
+		p2.setName("Eddie");
 		
 		// method to say book is loaned to this person
 		b2.SetPerson(p2);
@@ -23,7 +23,7 @@ public class BookTest extends TestCase {
 		// get name of person who has the book
 		String testName = b2.getPerson().getName();
 		
-		assertEquals("Elvis", testName);
+		assertEquals("Eddie", testName);
 	}
 
 }
