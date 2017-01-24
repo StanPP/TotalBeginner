@@ -24,7 +24,7 @@ public class MyLibraryTest extends TestCase {
 		assertTrue(ml.books instanceof ArrayList);
 		assertTrue(ml.people instanceof ArrayList);
 	}
-
+        // Setup for tests
 	public void setup() {
 		b1 = new Book ("Book1");
 		b2 = new Book ("Book2");
